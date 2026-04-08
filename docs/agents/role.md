@@ -8,19 +8,7 @@
 
 ### 📦 Output format
 
-```yaml
-features:
-  - name: <feature_name>
-
-    flows:
-      - name: <flow_name>
-        description: <optional>
-
-        steps:
-          - <user_action_1>
-          - <user_action_2>
-          - <user_action_3>
-```
+[Agent 1 output](AGENT_1_OUT.md)
 
 ---
 
@@ -45,24 +33,7 @@ features:
 
 ### 📦 Output format
 
-```yaml
-feature: <feature_name>
-
-testcases:
-  - id: TC_<FEATURE>_001
-    name: <testcase_name>
-
-    precondition:
-      - <optional>
-
-    steps:
-      - <test_step_1>
-      - <test_step_2>
-
-    expected:
-      - <expected_result_1>
-      - <expected_result_2>
-```
+[Agent 2 output](AGENT_2_OUT.md)
 
 ---
 
@@ -90,22 +61,7 @@ testcases:
 
 ### 📦 Output format
 
-```yaml
-id: TC_<FEATURE>_001
-name: <testcase_name>
-description: <optional>
-
-setup:
-  setup_app: true
-
-steps:
-  - action: <action_name>
-    <params>
-
-asserts:
-  - type: <assert_type>
-    <params>
-```
+[Agent 3 output](AGENT_3_OUT.md)
 
 (Theo đúng spec AutoMobile )
 

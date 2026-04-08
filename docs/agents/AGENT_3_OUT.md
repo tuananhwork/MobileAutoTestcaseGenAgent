@@ -26,3 +26,7 @@ asserts:
 
   - type: not_exists
     text_contains: "Invalid"
+
+id: TC_LOGIN_002
+id: TC_LOGIN_003
+...

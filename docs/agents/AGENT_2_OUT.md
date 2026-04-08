@@ -44,3 +44,7 @@ testcases:
         target: <error_message>
         ui_hint:
           text_contains: "<error text>"
+
+  - id: TC_<FEATURE>_002
+  - id: TC_<FEATURE>_003
+  - ...
