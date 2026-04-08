@@ -1,11 +1,11 @@
-[
-    {
-        feature: abc,
-        position: [{100,140}, {150, 180}]
-    },
-    {
-        feature: xyz,
-        position: [{200,340}, {380, 480}]
-    },
-    ...
-]
+features:
+  - name: <feature_name>
+
+    flows:
+      - name: <flow_name>
+        description: <optional>
+
+        steps:
+          - <user_action_1>
+          - <user_action_2>
+          - <user_action_3>

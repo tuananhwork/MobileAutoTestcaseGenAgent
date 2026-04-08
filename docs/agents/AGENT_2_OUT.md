@@ -1,22 +1,16 @@
-{
-  feature: abc,
-  testcases: [
-    {
-      id: TC_ABC_001,
-      name: TC Name
-      desc: TC Desc (chi tiết)
-      precondition: ...
-      steps: ...
-      expect: ...
-    },
-    {
-      id: TC_ABC_002,
-      name: TC Name
-      desc: TC Desc (chi tiết)
-      precondition: 
-      steps:
-      expect:
-    },
-    ...
-  ]
-}
+feature: <feature_name>
+
+testcases:
+  - id: TC_<FEATURE>_001
+    name: <testcase_name>
+
+    precondition:
+      - <optional>
+
+    steps:
+      - <test_step_1>
+      - <test_step_2>
+
+    expected:
+      - <expected_result_1>
+      - <expected_result_2>
