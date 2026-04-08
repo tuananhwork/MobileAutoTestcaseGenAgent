@@ -4,13 +4,24 @@ testcases:
   - id: TC_<FEATURE>_001
     name: <testcase_name>
 
-    precondition:
-      - <optional>
+    preconditions:
+      - type: state
+        value: user is not logged in
 
     steps:
-      - <test_step_1>
-      - <test_step_2>
+      - type: navigate
+        target: Login screen
+
+      - type: input
+        field: email
+        value: valid_email
+
+      - type: input
+        field: password
+        value: valid_password
+
+      - type: submit
 
     expected:
-      - <expected_result_1>
-      - <expected_result_2>
+      - type: navigation
+        target: Home screen
