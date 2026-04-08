@@ -1,14 +1,28 @@
-id: TC_<FEATURE>_001
-name: <testcase_name>
-description: <optional>
+id: TC_LOGIN_001
+name: Login success
 
 setup:
   setup_app: true
 
 steps:
-  - action: <action_name>
-    <params>
+  - action: touch
+    text_contains: "Email"
+
+  - action: input
+    text: "user@gmail.com"
+
+  - action: touch
+    text_contains: "Password"
+
+  - action: input
+    text: "123456"
+
+  - action: touch
+    text_contains: "Login"
 
 asserts:
-  - type: <assert_type>
-    <params>
+  - type: exists
+    text_contains: "Home"
+
+  - type: not_exists
+    text_contains: "Invalid"
